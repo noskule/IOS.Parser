@@ -1,0 +1,1 @@
+Port      Name               Status       Vlan       Duplex  Speed Type 

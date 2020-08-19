@@ -1,0 +1,55 @@
+ALBAE025C111>sh int status
+
+Port      Name               Status       Vlan       Duplex  Speed Type 
+Gi1/0/1   [No ZG] AVS_User_L notconnect   260          auto   auto 10/100/1000BaseTX
+Gi1/0/2   [No ZG] AVS_User_L notconnect   260          auto   auto 10/100/1000BaseTX
+Gi1/0/3   [No ZG] AVS_User_L notconnect   260          auto   auto 10/100/1000BaseTX
+Gi1/0/4   [No ZG] AVS_User_L notconnect   260          auto   auto 10/100/1000BaseTX
+Gi1/0/5   [No ZG] AVS_User_L notconnect   260          auto   auto 10/100/1000BaseTX
+Gi1/0/6   [No ZG] AVS_User_L notconnect   260          auto   auto 10/100/1000BaseTX
+Gi1/0/7   [No ZG] AVS_User_L notconnect   260          auto   auto 10/100/1000BaseTX
+Gi1/0/8   [No ZG] AVS_User_L notconnect   260          auto   auto 10/100/1000BaseTX
+Gi1/0/9   [No ZG] AVS_User_L notconnect   260          auto   auto 10/100/1000BaseTX
+Gi1/0/10  [No ZG] AVS_User_L notconnect   260          auto   auto 10/100/1000BaseTX
+Gi1/0/11  [No ZG] AVS_User_L notconnect   260          auto   auto 10/100/1000BaseTX
+Gi1/0/12  [No ZG] AVS_User_L notconnect   260          auto   auto 10/100/1000BaseTX
+Gi1/0/13  [No ZG] AVS_User_L notconnect   260          auto   auto 10/100/1000BaseTX
+Gi1/0/14  [No ZG] AVS_User_L notconnect   260          auto   auto 10/100/1000BaseTX
+Gi1/0/15  [No ZG] AVS_User_L notconnect   260          auto   auto 10/100/1000BaseTX
+Gi1/0/16  [No ZG] AVS_User_L notconnect   260          auto   auto 10/100/1000BaseTX
+Gi1/0/17  [No ZG] AVS_User_L notconnect   260          auto   auto 10/100/1000BaseTX
+Gi1/0/18  [No ZG] AVS_User_L notconnect   260          auto   auto 10/100/1000BaseTX
+Gi1/0/19  [No ZG] AVS_User_L notconnect   260          auto   auto 10/100/1000BaseTX
+Gi1/0/20  [No ZG] AVS_User_L notconnect   260          auto   auto 10/100/1000BaseTX
+Gi1/0/21  [No ZG] AVS_User_L notconnect   260          auto   auto 10/100/1000BaseTX
+Gi1/0/22  [No ZG] AVS_User_L notconnect   260          auto   auto 10/100/1000BaseTX
+Gi1/0/23  [No ZG] AVS_User_L notconnect   260          auto   auto 10/100/1000BaseTX
+Gi1/0/24  [No ZG] AVS_User_L notconnect   260          auto   auto 10/100/1000BaseTX
+Gi1/0/25  [No ZG] AVS_User_L notconnect   260          auto   auto 10/100/1000BaseTX
+Gi1/0/26  [No ZG] AVS_User_L notconnect   260          auto   auto 10/100/1000BaseTX
+Gi1/0/27  [No ZG] AVS_User_L notconnect   260          auto   auto 10/100/1000BaseTX
+Gi1/0/28  [No ZG] AVS_User_L notconnect   260          auto   auto 10/100/1000BaseTX
+Gi1/0/29  [No ZG] AVS_User_L notconnect   260          auto   auto 10/100/1000BaseTX
+Gi1/0/30  [No ZG] AVS_User_L notconnect   260          auto   auto 10/100/1000BaseTX
+Gi1/0/31  [No ZG] AVS_User_L notconnect   260          auto   auto 10/100/1000BaseTX
+Gi1/0/32  [No ZG] AVS_User_L notconnect   260          auto   auto 10/100/1000BaseTX
+Gi1/0/33  [No ZG] AVS_User_L notconnect   260          auto   auto 10/100/1000BaseTX
+Gi1/0/34  [No ZG] AVS_User_L notconnect   260          auto   auto 10/100/1000BaseTX
+Gi1/0/35  [No ZG] AVS_User_L notconnect   260          auto   auto 10/100/1000BaseTX
+Gi1/0/36  [No ZG] AVS_User_L notconnect   260          auto   auto 10/100/1000BaseTX
+Gi1/0/37  [No ZG] AVS_Cobra_ notconnect   261          auto   auto 10/100/1000BaseTX
+Gi1/0/38  [No ZG] AVS_Cobra_ notconnect   261          auto   auto 10/100/1000BaseTX
+Gi1/0/39  [No ZG] AVS_Cobra_ notconnect   261          auto   auto 10/100/1000BaseTX
+Gi1/0/40  [No ZG] AVS_Cobra_ notconnect   261          auto   auto 10/100/1000BaseTX
+Gi1/0/41  [No ZG] AVS_Cobra_ notconnect   261          auto   auto 10/100/1000BaseTX
+Gi1/0/42  [No ZG] AVS_Cobra_ notconnect   261          auto   auto 10/100/1000BaseTX
+Gi1/0/43  [No ZG] AVS_Cobra_ notconnect   261          auto   auto 10/100/1000BaseTX
+Gi1/0/44  [No ZG] AVS_Cobra_ notconnect   261          auto   auto 10/100/1000BaseTX
+Gi1/0/45  [No ZG] AVS_Cobra_ notconnect   261          auto   auto 10/100/1000BaseTX
+Gi1/0/46  [No ZG] AVS_Cobra_ notconnect   261          auto   auto 10/100/1000BaseTX
+Gi1/0/47  [No ZG] AVS_Cobra_ notconnect   261          auto   auto 10/100/1000BaseTX
+Gi1/0/48  [No ZG] AVS_Cobra_ notconnect   261          auto   auto 10/100/1000BaseTX
+Gi1/1/1                      disabled     1            auto   auto unknown
+Gi1/1/2   p2p ALBAU22C001 Gi connected    trunk      a-full a-1000 10/100/1000BaseTX SFP
+Te1/1/3   p2p ALBAE025C110 T connected    trunk        full   1000 1000BaseSX SFP
+Te1/1/4   p2p ALBAE025C002 G connected    trunk      a-full a-1000 10/100/1000BaseTX SFP

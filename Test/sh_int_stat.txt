@@ -1,0 +1,32 @@
+WAL031C006>show int status  
+
+Port      Name               Status       Vlan       Duplex  Speed Type 
+Gi1/0/1   UGZ_LAN_HOUS-isoli connected    420        a-full a-1000 10/100/1000BaseTX
+Gi1/0/2   UGZ_LAN_HOUS-isoli connected    420        a-full  a-100 10/100/1000BaseTX
+Gi1/0/3   UGZ_LAN_HOUS-isoli connected    420        a-full  a-100 10/100/1000BaseTX
+Gi1/0/4   UGZ_LAN_HOUS-isoli connected    420        a-full  a-100 10/100/1000BaseTX
+Gi1/0/5   UGZ_LAN_HOUS-isoli connected    420        a-full a-1000 10/100/1000BaseTX
+Gi1/0/6   UGZ_LAN_HOUS-isoli connected    420        a-full a-1000 10/100/1000BaseTX
+Gi1/0/7   UGZ_LAN_HOUS-isoli connected    420        a-full a-1000 10/100/1000BaseTX
+Gi1/0/8   UGZ_LAN_HOUS-isoli connected    420        a-full a-1000 10/100/1000BaseTX
+Gi1/0/9   UGZ_LAN_HOUS-isoli connected    299        a-full  a-100 10/100/1000BaseTX
+Gi1/0/10  UGZ_LAN_HOUS-isoli connected    420        a-full  a-100 10/100/1000BaseTX
+Gi1/0/11  UGZ_LAN_HOUS-isoli connected    420        a-full a-1000 10/100/1000BaseTX
+Gi1/0/12  UGZ_LAN_HOUS-isoli connected    420        a-full  a-100 10/100/1000BaseTX
+Gi1/0/13  UGZ_LAN_HOUS-isoli notconnect   420          auto   auto 10/100/1000BaseTX
+Gi1/0/14  UGZ_LAN_HOUS-isoli notconnect   420          auto   auto 10/100/1000BaseTX
+Gi1/0/15  UGZ_LAN_HOUS-isoli notconnect   420          auto   auto 10/100/1000BaseTX
+Gi1/0/16  UGZ_LAN_HOUS-isoli notconnect   420          auto   auto 10/100/1000BaseTX
+Gi1/0/17  UGZ_LAN_HOUS-isoli notconnect   420          auto   auto 10/100/1000BaseTX
+Gi1/0/18  UGZ_LAN_HOUS-isoli notconnect   420          auto   auto 10/100/1000BaseTX
+Gi1/0/19  UGZ_LAN_HOUS-isoli notconnect   420          auto   auto 10/100/1000BaseTX
+Gi1/0/20  UGZ_LAN_HOUS-isoli notconnect   420          auto   auto 10/100/1000BaseTX
+Gi1/0/21  UGZ_LAN_HOUS-isoli notconnect   420          auto   auto 10/100/1000BaseTX
+Gi1/0/22  UGZ_LAN_HOUS-isoli notconnect   420          auto   auto 10/100/1000BaseTX
+Gi1/0/23  UGZ_LAN_HOUS-isoli notconnect   420          auto   auto 10/100/1000BaseTX
+Gi1/0/24  p2p WAL031RV01_Gi1 connected    trunk      a-full a-1000 10/100/1000BaseTX
+Gi1/0/25                     disabled     1            auto   auto Not Present
+Gi1/0/26                     disabled     1            auto   auto Not Present
+Gi1/0/27                     disabled     1            auto   auto Not Present
+Gi1/0/28                     disabled     1            auto   auto Not Present
+Fa0                          disabled     routed       auto   auto 10/100BaseTX
