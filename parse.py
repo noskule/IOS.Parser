@@ -10,7 +10,8 @@ class Parse:
         self.console_data_list = []
 
 
-    ## PARSE TEXT LIST # # # # # # # # # # # # # # # # # # # # # # # # # # 
+    ## GENERISCHE FUNKTIONEN # # # # # # # # # # # # # # # # # # # # # # # # # # 
+
     def text_list(self, inventory_string):
         '''Parst eine Textliste wie "show inventory" und erstellt eine Liste mit Dictionaries.'''
         inventory_string = inventory_string.replace('\"', '')
@@ -28,8 +29,6 @@ class Parse:
                 dictlist.append(modul_dict)
         return dictlist
 
-
-    ## PARSE TEXT TABLE # # # # # # # # # # # # # # # # # # # # # # # # # # 
     def text_table(self, console_data):
         ''' Parst Textlisten wie "show interfaces status" und erstellt eine Liste aus Dictionaries.'''
         
@@ -92,6 +91,40 @@ class Parse:
                 coldict[col_head[i]] = element.strip()
             rowlist.append(coldict) 
         return rowlist
+          
+
+    ## SPEZIFISCHE FUNKTIIONEN # # # # # # # # # # # # # # # # # # # # # # # # 
+
+    def sh_ver(self, text):
+        '''Returns a dictionary List of parameters from the "show version" command '''
+        parameter_dictlist = []
+        parameter_dict_name = self.key_value_name( text, IOS_Param.sh_ver_sep_text )
+        parameter_dictlist.append(parameter_dict_name)
+        parameter_dict_dopp = self.key_value_doppelpunkt( text, IOS_Param.sh_ver_sep_dopp )
+        parameter_dictlist.append(parameter_dict_dopp)
+        parameter_dict_version = self.sh_ver_version(text)
+        parameter_dictlist.append(parameter_dict_version)
+        parameters = self.merge_dict_list(parameter_dictlist)
+        return parameter_dictlist
+
+    def sh_ver_version(self, text):
+        ''' Returns the version of the IOS installation'''
+        parameter_dict = {}
+        keys = ["Version ", "RELEASE SOFTWARE "]
+        for line in text.split('\n'):
+            if "Cisco IOS Software, " in line:
+                parameterlist = line.split(',')
+                for element in parameterlist:
+                    for key in keys:
+                        if key in element:
+                            parameter_dict[key.strip()] = element.replace(key, "").strip()
+        return parameter_dict
+
+    def sh_int_x(self, text):
+        '''Gibt ein Dict mit allen interface Parametern zurück'''
+        parameterstring = text.split('\n', 1)[1].replace(',', '\n').replace(';', '\n')
+        parameter_dict = self.key_value_name_first( parameterstring, IOS_Param.sh_int_x_text )
+        return parameter_dict
 
 
     ## CSV  # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
@@ -117,7 +150,7 @@ class Parse:
             return table
 
     def csv_write_table(self, file, table):
-        '''Writes a CSV-File from a dictionary list'''
+        '''Writes a List of Lists to a CSV-File the first list being the fieldnames'''
         with open(file, mode='w') as csv_file:
             fieldnames = table[0]
             writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
@@ -137,46 +170,11 @@ class Parse:
             for row in dictlist:
                 writer.writerow(row)
 
-            
-
-    ## SPECIAL COMMANDS # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
-
-    def sh_ver(self, text):
-        '''Returns a dictionary List of parameters from the "show version" command '''
-        parameter_dictlist = []
-        parameter_dict_name = self.key_value_name( text, IOS_Param.sh_ver_sep_text )
-        parameter_dictlist.append(parameter_dict_name)
-        parameter_dict_dopp = self.key_value_doppelpunkt( text, IOS_Param.sh_ver_sep_dopp )
-        parameter_dictlist.append(parameter_dict_dopp)
-        parameter_dict_version = self.sh_ver_version(text)
-        parameter_dictlist.append(parameter_dict_version)
-        parameters = self.merge_dict_list(parameter_dictlist)
-        dictlist = []
-        dictlist.append(parameters)   
-        return dictlist
-
-    def sh_ver_version(self, text):
-        ''' Returns the version of the IOS installation'''
-        parameter_dict = {}
-        keys = ["Version ", "RELEASE SOFTWARE "]
-        for line in text.split('\n'):
-            if "Cisco IOS Software, " in line:
-                parameterlist = line.split(',')
-                for element in parameterlist:
-                    for key in keys:
-                        if key in element:
-                            parameter_dict[key.strip()] = element.replace(key, "").strip()
-        return parameter_dict
-
-    def sh_int_x(self, text):
-        parameterstring = text.split('\n', 1)[1].replace(',', '\n').replace(';', '\n')
-        parameter_dict_name = self.key_value_name_first( parameterstring, IOS_Param.sh_int_x_text )
-        return parameter_dict_name
 
     ## TOOLS # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
     def console_output(self, data):
-        """ Returns a list with the console prompt and console output """
+        """ Returns a list ( two elements ) with the console prompt and console output """
         data = data.split('\n', 1)
         data[0] = data[0].strip() 
         data[1] = data[1].strip()
@@ -186,6 +184,13 @@ class Parse:
         '''Merges a list of dictionaries '''
         new_dict = {k:v for list_item in list_of_dicts for (k,v) in list_item.items()}
         return new_dict
+
+    def merge_lists(self, lists_of_lists):
+        '''Fasst eine Liste aus Listen zu einer Liste zusammen'''
+        merged_lists = []
+        for li in lists_of_lists:
+            merged_lists += li
+        return merged_lists
 
     def key_value_name(self, text, parameterlist) :
         '''Searches Lines for parameters and splits key and value when no seperator is used'''
@@ -233,12 +238,6 @@ class Parse:
             merged_lists = merged_lists + dictlist 
         keys = keys + list({k for d in merged_lists for k in d.keys()})
         return keys    
-      
-    def merge_lists(self, lists_of_lists):
-        '''Fasst eine Liste aus Listen zu einer Liste zusammen'''
-        merged_lists = []
-        for li in lists_of_lists:
-            merged_lists += li
-        return merged_lists
+
 
 

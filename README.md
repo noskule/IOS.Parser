@@ -1,18 +1,11 @@
 # Todo
 
-* Konsolenbefehl einbinden
-* device settings liste erstellen, hirarchisch
-* funktion die alle keys aus einer liste aus dictionaries generiert
+* Konsolenbefehle / Output als Objekte einbinden
 
 ## Bugs
 
-* parse.text_table() trennt Spalten nicht immer richtig
+* ~~parse.text_table() trennt Spalten nicht immer richtig~~
 
-## Features
-
-* Befehlshirarchie ( Konsolenbefehle ) einbinden
-* ~~parse.py als Klasse~~
-* ~~Funktion die alle Keys aus einer Liste aus Dictionaries generiert~~
 
 # Datenstruktur
 
@@ -26,9 +19,12 @@
     * Line Commands 
 
 ## Befehle fürs Parsing
-* show interface status
-* show interface counter
-* show version
+* show
+    * interface
+        * status
+        * counter
+    * version
+    * inventory
 
 ## Aufbau
 
