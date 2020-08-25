@@ -1,6 +1,6 @@
 # Todo
-* Konsolenbefehle als Funktionen einbinden
-  * Konsolenoutput der Funktionen als Globale Variablen in der Klasse definieren so das sie darüber abgerufen werden können
+* Konsolenbefehle als Funktionen und Variable einbinden
+* Liste aus Konsolenbefehl-Outputs in CSV speichern
 
 ## Bugs
 
