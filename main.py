@@ -12,36 +12,38 @@ dictlist = xyz999c001.csv_reader('Test/inventory_read.csv')
 
 ## GENERISCHE FUNKTIONEN # # # # # # # # # # # # # # # # # # # #
 
-## Parse List ( Inventory ) - - - - - - - - - - - - - - - - - - -
-console_output = xyz999c001.console_output( open( "Konsole/sh_inv.txt", "r+" ).read().strip() )
+## Parse List ( Bsp.: Inventory ) - - - - - - - - - - - - - - - - - - -
+console_output = xyz999c001.console_output( open( "Konsole/sh_inv.txt", "r+" ).read() )
 console_prompt = console_output[0]
 console_data = console_output[1]
-#console_data_list.append( xyz999c001.text_list(console_data) )
 xyz999c001.sh_inv = xyz999c001.text_list(console_data)
-print(xyz999c001.sh_inv)
 
-
-## Parse Table (interface status) - - - - - - - - - - - - - - - 
-console_output = xyz999c001.console_output( open("Konsole/sh_int_stat.txt", "r+").read().strip() )
+## Parse Table (Bsp.: Interface Status) - - - - - - - - - - - - - - - 
+console_output = xyz999c001.console_output( open("Konsole/sh_int_stat.txt", "r+").read() )
 console_prompt = console_output[0]
 console_data = console_output[1]
-# console_data_list.append( xyz999c001.text_table(console_data) )
+xyz999c001.sh_int_stat = xyz999c001.text_table(console_data)
 
+## Liste von Dict Values (Bsp.: Interfaces)
+xyz999c001.sh_int_stat_ports = xyz999c001.dictlist_values(xyz999c001.sh_int_stat, "Port")
+print(xyz999c001.sh_int_stat_ports)
 
 ## SPEZIFISCHE FUNKTIIONEN # # # # # # # # # # # # # # # # # # # #
 
 ## show version (all parameters) - - - - - - - - - - - - - - - - -
-console_output = xyz999c001.console_output( open("Konsole/sh_ver.txt", "r+").read().strip() )
+console_output = xyz999c001.console_output( open("Konsole/sh_ver.txt", "r+").read() )
 console_prompt = console_output[0]
 console_data = console_output[1]
-# console_data_list.append( xyz999c001.sh_ver(console_data) )
+xyz999c001.sh_ver = xyz999c001.sh_ver(console_data)
 
 ## show interface X - - - - - - - - - - - - - - - - - - - - - - - - 
 string = open("Konsole/sh_int_x.txt", "r+").read()
 console_output = xyz999c001.console_output(string)
 console_prompt = console_output[0]
 console_data = console_output[1]
-# console_data_list.append( xyz999c001.sh_int_x(console_data) )
+xyz999c001.sh_int_x = xyz999c001.sh_int_x(console_data)
+
+## show interfaces status - - - - - - - - - - - - - - - - - - - - -
 
 
 ## OUTPUT # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
@@ -60,8 +62,5 @@ console_data = console_output[1]
 
 
 ## Write Dictlist to CSV-File - - - - - - - - - - - - - - - - - - - -
-# merged_lists = xyz999c001.merge_lists(console_data_list)
-
-# print(merged_lists)
-# xyz999c001.csv_write_dictlist('Test/devices_settings_9.csv', merged_lists)
+xyz999c001.csv_write_dictlist('Test/devices_settings_9.csv', xyz999c001.sh_int_stat)
 

@@ -7,7 +7,6 @@ class Parse:
     def __init__(self, hostname='xyz999c001'):
         """Initialize name and age attributes."""
         self.hostname = hostname
-        self.console_data_list = []
 
 
     ## GENERISCHE FUNKTIONEN # # # # # # # # # # # # # # # # # # # # # # # # # # 
@@ -126,6 +125,9 @@ class Parse:
         parameter_dict = self.key_value_name_first( parameterstring, IOS_Param.sh_int_x_text )
         return parameter_dict
 
+    def sh_int_stat(self,console_data):
+        table_data = self.text_table(console_data)
+        return table_data
 
     ## CSV  # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
@@ -240,4 +242,10 @@ class Parse:
         return keys    
 
 
+    def dictlist_values(self, dictlist, key):
+        '''From a dictlist returns a list of values of a given key'''
+        valuelist = []
+        for dict in dictlist:
+            valuelist.append(dict[key])
+        return valuelist
 
