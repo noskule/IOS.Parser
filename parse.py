@@ -1,12 +1,13 @@
 import csv, IOS_Param
 
-
 class Parse:
     '''Ein Parser für CISCO IOS Konsolen Output'''
 
-    def __init__(self, hostname='xyz999c001'):
+    def __init__(self, hostname='XXX###c###' ):
         """Initialize name and age attributes."""
         self.hostname = hostname
+        self.sh_ver_var = ""
+        self.sh_int_stat_var = ""
 
 
     ## GENERISCHE FUNKTIONEN # # # # # # # # # # # # # # # # # # # # # # # # # # 
@@ -14,11 +15,11 @@ class Parse:
     def text_list(self, inventory_string):
         '''Parst eine Textliste wie "show inventory" und erstellt eine Liste mit Dictionaries.'''
         inventory_string = inventory_string.replace('\"', '')
-        inventory_list = inventory_string.split("\n\n\n")              # Listelemente generieren (Modulliste) """
+        inventory_list = inventory_string.split("\n\n\n")                  # Listelemente generieren (Modulliste) """
         for modul in inventory_list:
             dictlist = []
             for modul in inventory_list :
-                modul = modul.replace("\n", ',')                         # Neue Zeile in Komma umwandeln """
+                modul = modul.replace("\n", ',')                           # Neue Zeile in Komma umwandeln """
                 modul = [element.strip() for element in modul.split(',')]  # Listelemente genereieren (Modulelement) """
                 modul_dict = {}                                            # Module String in Dictionary """
                 for element in modul :
@@ -70,7 +71,6 @@ class Parse:
             stringindex += 1
         return col_dict        
 
-
     def text_table_data(self, coldict, stringlist):
         ''' Wandelt String jeder Daten-Zeile in Liste'''
         col_index = list ( coldict.keys() )
@@ -90,9 +90,9 @@ class Parse:
                 coldict[col_head[i]] = element.strip()
             rowlist.append(coldict) 
         return rowlist
-          
 
-    ## SPEZIFISCHE FUNKTIIONEN # # # # # # # # # # # # # # # # # # # # # # # # 
+
+    ## KONSOLENBEFEHLE # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
     def sh_ver(self, text):
         '''Returns a dictionary List of parameters from the "show version" command '''
@@ -104,7 +104,17 @@ class Parse:
         parameter_dict_version = self.sh_ver_version(text)
         parameter_dictlist.append(parameter_dict_version)
         parameters = self.merge_dict_list(parameter_dictlist)
+        self.sh_ver_var = parameters
         return parameter_dictlist
+
+    def sh_int_stat(self,console_data):
+        '''Returns a dictionary List of parameters from the show interface status command'''
+        table_data = self.text_table(console_data)
+        self.sh_int_stat_var = table_data
+        return table_data
+
+
+    ## KONSOLENBEFEHLE - HILFSFUNKTIONEN # # # # # # # # # # # # # # # # # # #
 
     def sh_ver_version(self, text):
         ''' Returns the version of the IOS installation'''
@@ -125,9 +135,6 @@ class Parse:
         parameter_dict = self.key_value_name_first( parameterstring, IOS_Param.sh_int_x_text )
         return parameter_dict
 
-    def sh_int_stat(self,console_data):
-        table_data = self.text_table(console_data)
-        return table_data
 
     ## CSV  # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
@@ -240,7 +247,6 @@ class Parse:
             merged_lists = merged_lists + dictlist 
         keys = keys + list({k for d in merged_lists for k in d.keys()})
         return keys    
-
 
     def dictlist_values(self, dictlist, key):
         '''From a dictlist returns a list of values of a given key'''

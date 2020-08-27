@@ -26,6 +26,8 @@
     * counter
   * version
   * inventory
+  * cdp
+    * neighbors
 
 ## Parse-Klasse Aufbau
 * Connect

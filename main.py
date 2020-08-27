@@ -14,36 +14,32 @@ dictlist = xyz999c001.csv_reader('Test/inventory_read.csv')
 
 ## Parse List ( Bsp.: Inventory ) - - - - - - - - - - - - - - - - - - -
 console_output = xyz999c001.console_output( open( "Konsole/sh_inv.txt", "r+" ).read() )
-console_prompt = console_output[0]
-console_data = console_output[1]
-xyz999c001.sh_inv = xyz999c001.text_list(console_data)
+xyz999c001.sh_inv = xyz999c001.text_list(console_output[1])
 
 ## Parse Table (Bsp.: Interface Status) - - - - - - - - - - - - - - - 
 console_output = xyz999c001.console_output( open("Konsole/sh_int_stat.txt", "r+").read() )
-console_prompt = console_output[0]
-console_data = console_output[1]
-xyz999c001.sh_int_stat = xyz999c001.text_table(console_data)
+xyz999c001.sh_int_stat_var = xyz999c001.text_table(console_output[1])
 
 ## Liste von Dict Values (Bsp.: Interfaces)
-xyz999c001.sh_int_stat_ports = xyz999c001.dictlist_values(xyz999c001.sh_int_stat, "Port")
-print(xyz999c001.sh_int_stat_ports)
+print(xyz999c001.sh_int_stat)
+# xyz999c001.sh_int_stat_ports = xyz999c001.dictlist_values(xyz999c001.sh_int_stat, "Port")
+# print(xyz999c001.sh_int_stat_ports)
 
 ## SPEZIFISCHE FUNKTIIONEN # # # # # # # # # # # # # # # # # # # #
 
 ## show version (all parameters) - - - - - - - - - - - - - - - - -
 console_output = xyz999c001.console_output( open("Konsole/sh_ver.txt", "r+").read() )
-console_prompt = console_output[0]
-console_data = console_output[1]
-xyz999c001.sh_ver = xyz999c001.sh_ver(console_data)
+xyz999c001.sh_ver(console_output[1])
+print("sh_ver_var: " + format(xyz999c001.sh_ver_var) )
 
 ## show interface X - - - - - - - - - - - - - - - - - - - - - - - - 
-string = open("Konsole/sh_int_x.txt", "r+").read()
-console_output = xyz999c001.console_output(string)
-console_prompt = console_output[0]
-console_data = console_output[1]
-xyz999c001.sh_int_x = xyz999c001.sh_int_x(console_data)
+console_output = xyz999c001.console_output( open("Konsole/sh_int_x.txt", "r+").read() )
+xyz999c001.sh_int_x(console_output[1])
 
 ## show interfaces status - - - - - - - - - - - - - - - - - - - - -
+console_output = xyz999c001.console_output( open("Konsole/sh_int_stat.txt", "r+").read() )
+xyz999c001.sh_int_stat(console_output[1])
+print("sh_int_stat_var: " + format(xyz999c001.sh_int_stat_var) )
 
 
 ## OUTPUT # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
@@ -62,5 +58,5 @@ xyz999c001.sh_int_x = xyz999c001.sh_int_x(console_data)
 
 
 ## Write Dictlist to CSV-File - - - - - - - - - - - - - - - - - - - -
-xyz999c001.csv_write_dictlist('Test/devices_settings_9.csv', xyz999c001.sh_int_stat)
+xyz999c001.csv_write_dictlist('Test/devices_settings_9.csv', xyz999c001.sh_int_stat_var)
 
