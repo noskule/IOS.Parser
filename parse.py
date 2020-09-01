@@ -8,6 +8,7 @@ class Parse:
         self.hostname = hostname
         self.sh_ver_var = ""
         self.sh_int_stat_var = ""
+        self.int_stat_ports_var = ""
 
 
     ## GENERISCHE FUNKTIONEN # # # # # # # # # # # # # # # # # # # # # # # # # # 
@@ -105,13 +106,11 @@ class Parse:
         parameter_dictlist.append(parameter_dict_version)
         parameters = self.merge_dict_list(parameter_dictlist)
         self.sh_ver_var = parameters
-        return parameter_dictlist
 
     def sh_int_stat(self,console_data):
         '''Returns a dictionary List of parameters from the show interface status command'''
         table_data = self.text_table(console_data)
         self.sh_int_stat_var = table_data
-        return table_data
 
 
     ## KONSOLENBEFEHLE - HILFSFUNKTIONEN # # # # # # # # # # # # # # # # # # #
@@ -169,9 +168,10 @@ class Parse:
                 #print("row: " + format(row) )
                 writer.writerow(row)
 
-    def csv_write_dictlist( self,  file, dictlist ):
+    def csv_write_dictlist( self,  file, dictlist, fieldnames="" ):
         '''Writes a list of dictionary to a csv file.'''
-        fieldnames = {k for d in dictlist for k in d.keys()}
+        if fieldnames  == "":
+            fieldnames = {k for d in dictlist for k in d.keys()}
         with open(file, mode='w') as file:
             writer = csv.DictWriter(file, fieldnames=fieldnames, delimiter=',',
                      quotechar='"', quoting=csv.QUOTE_MINIMAL, lineterminator='\n')
@@ -194,6 +194,17 @@ class Parse:
         new_dict = {k:v for list_item in list_of_dicts for (k,v) in list_item.items()}
         return new_dict
 
+    def merge_dict_lists(self, lists_of_dictlists ):
+        '''Merges lists of dictlist to one list of dicts '''
+        '''
+        * pop first element of each list and extract the keys
+        * merge the lists into a new list
+        * add the keys to the first element in the new list
+        * return the list 
+        '''
+        pass
+
+
     def merge_lists(self, lists_of_lists):
         '''Fasst eine Liste aus Listen zu einer Liste zusammen'''
         merged_lists = []
@@ -213,7 +224,7 @@ class Parse:
         return parameter_dict
 
     def key_value_name_first(self, text, parameterlist) :
-        '''Searches Lines for parameters and splits key and value when key is first and value is secondin line and writes a dictionary'''
+        '''Searches Lines for parameters and splits key and value when key is first and value is second in line and writes a dictionary'''
         parameter_dict = {}
         linelist = [line.strip() for line in text.split('\n')]
         for parameter in parameterlist :
@@ -227,7 +238,7 @@ class Parse:
         return parameter_dict
 
     def key_value_doppelpunkt(self, text, parameterlist) :
-        '''Searches Lines for parameters and splits key and value when ":" as seperator is used'''
+        '''Searches Lines for parameters and splits key and value when key is first and separator is ":" '''
         parameter_dict = {}
         for line in text.split('\n') :
             for parameter in parameterlist :

@@ -1,6 +1,11 @@
 # Todo
-* Konsolenbefehle als Funktionen und Variable einbinden
+* teste csv_writer function da mit optionalem argument "fieldnames" erweitert
+* def merge_lists_w_heads
 * Liste aus Konsolenbefehl-Outputs in CSV speichern
+* sh int status und sh int X als Liste zusammenführen
+
+* ~~Konsolenbefehle als Funktionen und Variable einbinden~~
+
 
 ## Bugs
 
