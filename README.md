@@ -1,14 +1,15 @@
 # Todo
-* teste csv_writer function da mit optionalem argument "fieldnames" erweitert
 * def merge_lists_w_heads
 * Liste aus Konsolenbefehl-Outputs in CSV speichern
 * sh int status und sh int X als Liste zusammenführen
 
 * ~~Konsolenbefehle als Funktionen und Variable einbinden~~
+* ~~teste csv_write_dictlist function da mit optionalem argument "fieldnames" erweitert~~
 
 
 ## Bugs
 
+* xyz999c002.sh_int_stat_var ist leer
 * ~~parse.text_table() trennt Spalten nicht immer richtig~~
 
 

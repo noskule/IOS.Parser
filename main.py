@@ -1,4 +1,5 @@
 from parse import Parse
+import test
 
 xyz999c001 = Parse("xyz999c001")
 xyz999c002 = Parse("xyz999c002")
@@ -14,12 +15,12 @@ dictlist = xyz999c001.csv_reader('Test/inventory_read.csv')
 ## show version (all parameters) - - - - - - - - - - - - - - - - -
 console_output = xyz999c001.console_output( open("Konsole/sh_ver.txt", "r+").read() )
 xyz999c001.sh_ver(console_output[1])
-xyz999c002.sh_ver(console_output[1])
 # print("sh_ver_var: " + format(xyz999c001.sh_ver_var) )
 
 ## show interfaces status - - - - - - - - - - - - - - - - - - - - -
 console_output = xyz999c001.console_output( open("Konsole/sh_int_stat.txt", "r+").read() )
 xyz999c001.sh_int_stat(console_output[1])
+xyz999c002.sh_int_stat(console_output[1])
 # print("sh_int_stat_var: " + format(xyz999c001.sh_int_stat_var) )
 
 ## show interface X - - - - - - - - - - - - - - - - - - - - - - - - 
@@ -48,13 +49,22 @@ xyz999c001.int_stat_ports_var = xyz999c001.dictlist_values(xyz999c001.sh_int_sta
 #xyz999c001.csv_write_table('Test/console_data_list.csv', console_data_list)
 
 ## Write one Dictlist to CSV-File - - - - - - - - - - - - - - - - - - - -
-xyz999c001.csv_write_dictlist('Test/devices_settings_1.csv', xyz999c001.sh_int_stat_var)
+xyz999c001.csv_write_dictlist('Test/devices_settings_2.csv', xyz999c001.sh_int_stat_var)
 
-## Write a list of dictlists to CSV-File - - - - - - - - - - - - - - - - - - - -
-list_of_dictlists = [ xyz999c001.sh_ver_var, xyz999c002.sh_ver_var ]
+## Write a list of dictlists to CSV-File - - - - - - - - - - - - - - - - -
+list_of_dictlists = [ xyz999c001.sh_int_stat_var, xyz999c002.sh_int_stat_var ]
+# print(xyz999c001.sh_int_stat_var)
+#print( xyz999c001.listlist_dict_keys( list_of_dictlists ) )
+#print(xyz999c002.sh_int_stat_var)
+print("---------------------")
+print(test.list_of_dictlists)
+print("---------------------")
+print( xyz999c001.listlist_dict_keys( list_of_dictlists ) )
+
+
 # print(list_of_dictlists)
 
-## PRINT  - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+## PRINT  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 #print(list_of_dictlists)
 # Druckt eine Liste von Dictionaries
 # for element in list_of_dictlists:
