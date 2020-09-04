@@ -1,8 +1,8 @@
 # Todo
-* nichtspezifische hostfunktionen in separates modul ausserhalb hostklasse 
 * Liste aus Konsolenbefehl-Outputs in CSV speichern
 * sh int status und sh int X als Liste zusammenführen
   * hostname dazunehmen
+* ~~nichtspezifische hostfunktionen in separates modul ausserhalb hostklasse~~ 
 * ~~def merge_lists_w_heads~~
 * ~~Konsolenbefehle als Funktionen und Variable einbinden~~
 * ~~teste csv_write_dictlist function da mit optionalem argument "fieldnames" erweitert~~
