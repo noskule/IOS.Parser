@@ -10,7 +10,7 @@
 
 ## Bugs
 
-* xyz999c002.sh_int_stat_var ist leer
+* ~~xyz999c002.sh_int_stat_var ist leer~~
 * ~~parse.text_table() trennt Spalten nicht immer richtig~~
 
 
