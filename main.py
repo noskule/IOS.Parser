@@ -22,6 +22,7 @@ console_output = xyz999c001.console_output( open("Konsole/sh_int_stat.txt", "r+"
 xyz999c001.sh_int_stat(console_output[1])
 xyz999c002.sh_int_stat(console_output[1])
 # print("sh_int_stat_var: " + format(xyz999c001.sh_int_stat_var) )
+# print("sh_int_stat_var: " + format(xyz999c002.sh_int_stat_var) )
 
 ## show interface X - - - - - - - - - - - - - - - - - - - - - - - - 
 console_output = xyz999c001.console_output( open("Konsole/sh_int_x.txt", "r+").read() )
@@ -53,14 +54,9 @@ xyz999c001.csv_write_dictlist('Test/devices_settings_2.csv', xyz999c001.sh_int_s
 
 ## Write a list of dictlists to CSV-File - - - - - - - - - - - - - - - - -
 list_of_dictlists = [ xyz999c001.sh_int_stat_var, xyz999c002.sh_int_stat_var ]
-# print(xyz999c001.sh_int_stat_var)
-#print( xyz999c001.listlist_dict_keys( list_of_dictlists ) )
-#print(xyz999c002.sh_int_stat_var)
-print("---------------------")
-print(test.list_of_dictlists)
-print("---------------------")
-print( xyz999c001.listlist_dict_keys( list_of_dictlists ) )
-
+list_of_dictlists_merged = xyz999c001.merge_lists(list_of_dictlists)
+list_of_dictlists_keys = xyz999c001.listlist_dict_keys( list_of_dictlists )
+xyz999c002.csv_write_dictlist('Test/list_of_dictlists_4.csv', list_of_dictlists_merged, list_of_dictlists_keys)
 
 # print(list_of_dictlists)
 
