@@ -1,9 +1,9 @@
 # Todo
-* def merge_lists_w_heads
+* nichtspezifische hostfunktionen in separates modul ausserhalb hostklasse 
 * Liste aus Konsolenbefehl-Outputs in CSV speichern
 * sh int status und sh int X als Liste zusammenführen
-* merge_dict_lists() testen, funktioniert nicht mit 
-
+  * hostname dazunehmen
+* ~~def merge_lists_w_heads~~
 * ~~Konsolenbefehle als Funktionen und Variable einbinden~~
 * ~~teste csv_write_dictlist function da mit optionalem argument "fieldnames" erweitert~~
 

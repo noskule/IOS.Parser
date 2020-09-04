@@ -28,3 +28,32 @@ p2p XYZ999RV01_Gi1,a-full,10/100/1000BaseTX,Gi1/0/24,trunk,connected,a-1000
 ,auto,Not Present,Gi1/0/27,1,disabled,auto
 ,auto,Not Present,Gi1/0/28,1,disabled,auto
 ,auto,10/100BaseTX,Fa0,routed,disabled,auto
+UGZ_LAN_HOUS-isoli,a-full,10/100/1000BaseTX,Gi1/0/1,420,connected,a-1000
+UGZ_LAN_HOUS-isoli,a-full,10/100/1000BaseTX,Gi1/0/2,420,connected,a-100
+UGZ_LAN_HOUS-isoli,a-full,10/100/1000BaseTX,Gi1/0/3,420,connected,a-100
+UGZ_LAN_HOUS-isoli,a-full,10/100/1000BaseTX,Gi1/0/4,420,connected,a-100
+UGZ_LAN_HOUS-isoli,a-full,10/100/1000BaseTX,Gi1/0/5,420,connected,a-1000
+UGZ_LAN_HOUS-isoli,a-full,10/100/1000BaseTX,Gi1/0/6,420,connected,a-1000
+UGZ_LAN_HOUS-isoli,a-full,10/100/1000BaseTX,Gi1/0/7,420,connected,a-1000
+UGZ_LAN_HOUS-isoli,a-full,10/100/1000BaseTX,Gi1/0/8,420,connected,a-1000
+UGZ_LAN_HOUS-isoli,a-full,10/100/1000BaseTX,Gi1/0/9,299,connected,a-100
+UGZ_LAN_HOUS-isoli,a-full,10/100/1000BaseTX,Gi1/0/10,420,connected,a-100
+UGZ_LAN_HOUS-isoli,a-full,10/100/1000BaseTX,Gi1/0/11,420,connected,a-1000
+UGZ_LAN_HOUS-isoli,a-full,10/100/1000BaseTX,Gi1/0/12,420,connected,a-100
+UGZ_LAN_HOUS-isoli,auto,10/100/1000BaseTX,Gi1/0/13,420,notconnect,auto
+UGZ_LAN_HOUS-isoli,auto,10/100/1000BaseTX,Gi1/0/14,420,notconnect,auto
+UGZ_LAN_HOUS-isoli,auto,10/100/1000BaseTX,Gi1/0/15,420,notconnect,auto
+UGZ_LAN_HOUS-isoli,auto,10/100/1000BaseTX,Gi1/0/16,420,notconnect,auto
+UGZ_LAN_HOUS-isoli,auto,10/100/1000BaseTX,Gi1/0/17,420,notconnect,auto
+UGZ_LAN_HOUS-isoli,auto,10/100/1000BaseTX,Gi1/0/18,420,notconnect,auto
+UGZ_LAN_HOUS-isoli,auto,10/100/1000BaseTX,Gi1/0/19,420,notconnect,auto
+UGZ_LAN_HOUS-isoli,auto,10/100/1000BaseTX,Gi1/0/20,420,notconnect,auto
+UGZ_LAN_HOUS-isoli,auto,10/100/1000BaseTX,Gi1/0/21,420,notconnect,auto
+UGZ_LAN_HOUS-isoli,auto,10/100/1000BaseTX,Gi1/0/22,420,notconnect,auto
+UGZ_LAN_HOUS-isoli,auto,10/100/1000BaseTX,Gi1/0/23,420,notconnect,auto
+p2p XYZ999RV01_Gi1,a-full,10/100/1000BaseTX,Gi1/0/24,trunk,connected,a-1000
+,auto,Not Present,Gi1/0/25,1,disabled,auto
+,auto,Not Present,Gi1/0/26,1,disabled,auto
+,auto,Not Present,Gi1/0/27,1,disabled,auto
+,auto,Not Present,Gi1/0/28,1,disabled,auto
+,auto,10/100BaseTX,Fa0,routed,disabled,auto

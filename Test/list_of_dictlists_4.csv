@@ -1,59 +1,59 @@
-Status,Duplex,Vlan,Name,Speed,Port,Type
-connected,a-full,420,UGZ_LAN_HOUS-isoli,a-1000,Gi1/0/1,10/100/1000BaseTX
-connected,a-full,420,UGZ_LAN_HOUS-isoli,a-100,Gi1/0/2,10/100/1000BaseTX
-connected,a-full,420,UGZ_LAN_HOUS-isoli,a-100,Gi1/0/3,10/100/1000BaseTX
-connected,a-full,420,UGZ_LAN_HOUS-isoli,a-100,Gi1/0/4,10/100/1000BaseTX
-connected,a-full,420,UGZ_LAN_HOUS-isoli,a-1000,Gi1/0/5,10/100/1000BaseTX
-connected,a-full,420,UGZ_LAN_HOUS-isoli,a-1000,Gi1/0/6,10/100/1000BaseTX
-connected,a-full,420,UGZ_LAN_HOUS-isoli,a-1000,Gi1/0/7,10/100/1000BaseTX
-connected,a-full,420,UGZ_LAN_HOUS-isoli,a-1000,Gi1/0/8,10/100/1000BaseTX
-connected,a-full,299,UGZ_LAN_HOUS-isoli,a-100,Gi1/0/9,10/100/1000BaseTX
-connected,a-full,420,UGZ_LAN_HOUS-isoli,a-100,Gi1/0/10,10/100/1000BaseTX
-connected,a-full,420,UGZ_LAN_HOUS-isoli,a-1000,Gi1/0/11,10/100/1000BaseTX
-connected,a-full,420,UGZ_LAN_HOUS-isoli,a-100,Gi1/0/12,10/100/1000BaseTX
-notconnect,auto,420,UGZ_LAN_HOUS-isoli,auto,Gi1/0/13,10/100/1000BaseTX
-notconnect,auto,420,UGZ_LAN_HOUS-isoli,auto,Gi1/0/14,10/100/1000BaseTX
-notconnect,auto,420,UGZ_LAN_HOUS-isoli,auto,Gi1/0/15,10/100/1000BaseTX
-notconnect,auto,420,UGZ_LAN_HOUS-isoli,auto,Gi1/0/16,10/100/1000BaseTX
-notconnect,auto,420,UGZ_LAN_HOUS-isoli,auto,Gi1/0/17,10/100/1000BaseTX
-notconnect,auto,420,UGZ_LAN_HOUS-isoli,auto,Gi1/0/18,10/100/1000BaseTX
-notconnect,auto,420,UGZ_LAN_HOUS-isoli,auto,Gi1/0/19,10/100/1000BaseTX
-notconnect,auto,420,UGZ_LAN_HOUS-isoli,auto,Gi1/0/20,10/100/1000BaseTX
-notconnect,auto,420,UGZ_LAN_HOUS-isoli,auto,Gi1/0/21,10/100/1000BaseTX
-notconnect,auto,420,UGZ_LAN_HOUS-isoli,auto,Gi1/0/22,10/100/1000BaseTX
-notconnect,auto,420,UGZ_LAN_HOUS-isoli,auto,Gi1/0/23,10/100/1000BaseTX
-connected,a-full,trunk,p2p XYZ999RV01_Gi1,a-1000,Gi1/0/24,10/100/1000BaseTX
-disabled,auto,1,,auto,Gi1/0/25,Not Present
-disabled,auto,1,,auto,Gi1/0/26,Not Present
-disabled,auto,1,,auto,Gi1/0/27,Not Present
-disabled,auto,1,,auto,Gi1/0/28,Not Present
-disabled,auto,routed,,auto,Fa0,10/100BaseTX
-connected,a-full,420,UGZ_LAN_HOUS-isoli,a-1000,Gi1/0/1,10/100/1000BaseTX
-connected,a-full,420,UGZ_LAN_HOUS-isoli,a-100,Gi1/0/2,10/100/1000BaseTX
-connected,a-full,420,UGZ_LAN_HOUS-isoli,a-100,Gi1/0/3,10/100/1000BaseTX
-connected,a-full,420,UGZ_LAN_HOUS-isoli,a-100,Gi1/0/4,10/100/1000BaseTX
-connected,a-full,420,UGZ_LAN_HOUS-isoli,a-1000,Gi1/0/5,10/100/1000BaseTX
-connected,a-full,420,UGZ_LAN_HOUS-isoli,a-1000,Gi1/0/6,10/100/1000BaseTX
-connected,a-full,420,UGZ_LAN_HOUS-isoli,a-1000,Gi1/0/7,10/100/1000BaseTX
-connected,a-full,420,UGZ_LAN_HOUS-isoli,a-1000,Gi1/0/8,10/100/1000BaseTX
-connected,a-full,299,UGZ_LAN_HOUS-isoli,a-100,Gi1/0/9,10/100/1000BaseTX
-connected,a-full,420,UGZ_LAN_HOUS-isoli,a-100,Gi1/0/10,10/100/1000BaseTX
-connected,a-full,420,UGZ_LAN_HOUS-isoli,a-1000,Gi1/0/11,10/100/1000BaseTX
-connected,a-full,420,UGZ_LAN_HOUS-isoli,a-100,Gi1/0/12,10/100/1000BaseTX
-notconnect,auto,420,UGZ_LAN_HOUS-isoli,auto,Gi1/0/13,10/100/1000BaseTX
-notconnect,auto,420,UGZ_LAN_HOUS-isoli,auto,Gi1/0/14,10/100/1000BaseTX
-notconnect,auto,420,UGZ_LAN_HOUS-isoli,auto,Gi1/0/15,10/100/1000BaseTX
-notconnect,auto,420,UGZ_LAN_HOUS-isoli,auto,Gi1/0/16,10/100/1000BaseTX
-notconnect,auto,420,UGZ_LAN_HOUS-isoli,auto,Gi1/0/17,10/100/1000BaseTX
-notconnect,auto,420,UGZ_LAN_HOUS-isoli,auto,Gi1/0/18,10/100/1000BaseTX
-notconnect,auto,420,UGZ_LAN_HOUS-isoli,auto,Gi1/0/19,10/100/1000BaseTX
-notconnect,auto,420,UGZ_LAN_HOUS-isoli,auto,Gi1/0/20,10/100/1000BaseTX
-notconnect,auto,420,UGZ_LAN_HOUS-isoli,auto,Gi1/0/21,10/100/1000BaseTX
-notconnect,auto,420,UGZ_LAN_HOUS-isoli,auto,Gi1/0/22,10/100/1000BaseTX
-notconnect,auto,420,UGZ_LAN_HOUS-isoli,auto,Gi1/0/23,10/100/1000BaseTX
-connected,a-full,trunk,p2p XYZ999RV01_Gi1,a-1000,Gi1/0/24,10/100/1000BaseTX
-disabled,auto,1,,auto,Gi1/0/25,Not Present
-disabled,auto,1,,auto,Gi1/0/26,Not Present
-disabled,auto,1,,auto,Gi1/0/27,Not Present
-disabled,auto,1,,auto,Gi1/0/28,Not Present
-disabled,auto,routed,,auto,Fa0,10/100BaseTX
+Duplex,Vlan,Name,Port,Speed,Type,Status
+a-full,420,UGZ_LAN_HOUS-isoli,Gi1/0/1,a-1000,10/100/1000BaseTX,connected
+a-full,420,UGZ_LAN_HOUS-isoli,Gi1/0/2,a-100,10/100/1000BaseTX,connected
+a-full,420,UGZ_LAN_HOUS-isoli,Gi1/0/3,a-100,10/100/1000BaseTX,connected
+a-full,420,UGZ_LAN_HOUS-isoli,Gi1/0/4,a-100,10/100/1000BaseTX,connected
+a-full,420,UGZ_LAN_HOUS-isoli,Gi1/0/5,a-1000,10/100/1000BaseTX,connected
+a-full,420,UGZ_LAN_HOUS-isoli,Gi1/0/6,a-1000,10/100/1000BaseTX,connected
+a-full,420,UGZ_LAN_HOUS-isoli,Gi1/0/7,a-1000,10/100/1000BaseTX,connected
+a-full,420,UGZ_LAN_HOUS-isoli,Gi1/0/8,a-1000,10/100/1000BaseTX,connected
+a-full,299,UGZ_LAN_HOUS-isoli,Gi1/0/9,a-100,10/100/1000BaseTX,connected
+a-full,420,UGZ_LAN_HOUS-isoli,Gi1/0/10,a-100,10/100/1000BaseTX,connected
+a-full,420,UGZ_LAN_HOUS-isoli,Gi1/0/11,a-1000,10/100/1000BaseTX,connected
+a-full,420,UGZ_LAN_HOUS-isoli,Gi1/0/12,a-100,10/100/1000BaseTX,connected
+auto,420,UGZ_LAN_HOUS-isoli,Gi1/0/13,auto,10/100/1000BaseTX,notconnect
+auto,420,UGZ_LAN_HOUS-isoli,Gi1/0/14,auto,10/100/1000BaseTX,notconnect
+auto,420,UGZ_LAN_HOUS-isoli,Gi1/0/15,auto,10/100/1000BaseTX,notconnect
+auto,420,UGZ_LAN_HOUS-isoli,Gi1/0/16,auto,10/100/1000BaseTX,notconnect
+auto,420,UGZ_LAN_HOUS-isoli,Gi1/0/17,auto,10/100/1000BaseTX,notconnect
+auto,420,UGZ_LAN_HOUS-isoli,Gi1/0/18,auto,10/100/1000BaseTX,notconnect
+auto,420,UGZ_LAN_HOUS-isoli,Gi1/0/19,auto,10/100/1000BaseTX,notconnect
+auto,420,UGZ_LAN_HOUS-isoli,Gi1/0/20,auto,10/100/1000BaseTX,notconnect
+auto,420,UGZ_LAN_HOUS-isoli,Gi1/0/21,auto,10/100/1000BaseTX,notconnect
+auto,420,UGZ_LAN_HOUS-isoli,Gi1/0/22,auto,10/100/1000BaseTX,notconnect
+auto,420,UGZ_LAN_HOUS-isoli,Gi1/0/23,auto,10/100/1000BaseTX,notconnect
+a-full,trunk,p2p XYZ999RV01_Gi1,Gi1/0/24,a-1000,10/100/1000BaseTX,connected
+auto,1,,Gi1/0/25,auto,Not Present,disabled
+auto,1,,Gi1/0/26,auto,Not Present,disabled
+auto,1,,Gi1/0/27,auto,Not Present,disabled
+auto,1,,Gi1/0/28,auto,Not Present,disabled
+auto,routed,,Fa0,auto,10/100BaseTX,disabled
+a-full,420,UGZ_LAN_HOUS-isoli,Gi1/0/1,a-1000,10/100/1000BaseTX,connected
+a-full,420,UGZ_LAN_HOUS-isoli,Gi1/0/2,a-100,10/100/1000BaseTX,connected
+a-full,420,UGZ_LAN_HOUS-isoli,Gi1/0/3,a-100,10/100/1000BaseTX,connected
+a-full,420,UGZ_LAN_HOUS-isoli,Gi1/0/4,a-100,10/100/1000BaseTX,connected
+a-full,420,UGZ_LAN_HOUS-isoli,Gi1/0/5,a-1000,10/100/1000BaseTX,connected
+a-full,420,UGZ_LAN_HOUS-isoli,Gi1/0/6,a-1000,10/100/1000BaseTX,connected
+a-full,420,UGZ_LAN_HOUS-isoli,Gi1/0/7,a-1000,10/100/1000BaseTX,connected
+a-full,420,UGZ_LAN_HOUS-isoli,Gi1/0/8,a-1000,10/100/1000BaseTX,connected
+a-full,299,UGZ_LAN_HOUS-isoli,Gi1/0/9,a-100,10/100/1000BaseTX,connected
+a-full,420,UGZ_LAN_HOUS-isoli,Gi1/0/10,a-100,10/100/1000BaseTX,connected
+a-full,420,UGZ_LAN_HOUS-isoli,Gi1/0/11,a-1000,10/100/1000BaseTX,connected
+a-full,420,UGZ_LAN_HOUS-isoli,Gi1/0/12,a-100,10/100/1000BaseTX,connected
+auto,420,UGZ_LAN_HOUS-isoli,Gi1/0/13,auto,10/100/1000BaseTX,notconnect
+auto,420,UGZ_LAN_HOUS-isoli,Gi1/0/14,auto,10/100/1000BaseTX,notconnect
+auto,420,UGZ_LAN_HOUS-isoli,Gi1/0/15,auto,10/100/1000BaseTX,notconnect
+auto,420,UGZ_LAN_HOUS-isoli,Gi1/0/16,auto,10/100/1000BaseTX,notconnect
+auto,420,UGZ_LAN_HOUS-isoli,Gi1/0/17,auto,10/100/1000BaseTX,notconnect
+auto,420,UGZ_LAN_HOUS-isoli,Gi1/0/18,auto,10/100/1000BaseTX,notconnect
+auto,420,UGZ_LAN_HOUS-isoli,Gi1/0/19,auto,10/100/1000BaseTX,notconnect
+auto,420,UGZ_LAN_HOUS-isoli,Gi1/0/20,auto,10/100/1000BaseTX,notconnect
+auto,420,UGZ_LAN_HOUS-isoli,Gi1/0/21,auto,10/100/1000BaseTX,notconnect
+auto,420,UGZ_LAN_HOUS-isoli,Gi1/0/22,auto,10/100/1000BaseTX,notconnect
+auto,420,UGZ_LAN_HOUS-isoli,Gi1/0/23,auto,10/100/1000BaseTX,notconnect
+a-full,trunk,p2p XYZ999RV01_Gi1,Gi1/0/24,a-1000,10/100/1000BaseTX,connected
+auto,1,,Gi1/0/25,auto,Not Present,disabled
+auto,1,,Gi1/0/26,auto,Not Present,disabled
+auto,1,,Gi1/0/27,auto,Not Present,disabled
+auto,1,,Gi1/0/28,auto,Not Present,disabled
+auto,routed,,Fa0,auto,10/100BaseTX,disabled
